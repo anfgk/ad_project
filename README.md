@@ -8,7 +8,7 @@
 ## 🌎 Tech
 HTML, CSS, JS
 
-## 🖥️ Soft Skill
+## 🖥️ Other Skill
 Netlify
 
 ## 🥺 문제점
