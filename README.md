@@ -6,7 +6,7 @@
 ## 🕰️ 개발기간
 
 ## 🌎 Tech
-JS
+HTML, CSS, JS
 
 ## 🖥️ Soft Skill
 Netlify
