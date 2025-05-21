@@ -3,6 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- SEO Meta Tags -->
+    <title>TWS (투어스) - Official Website</title>
+    <meta
+      name="description"
+      content="TWS(TWENTY FOUR SEVEN WITH US)는 플레디스 엔터테인먼트의 신인 보이그룹입니다. 멤버 신유, 도훈, 영재, 한진, 지훈, 경민으로 구성되어 있습니다."
+    />
+    <meta
+      name="keywords"
+      content="TWS, 투어스, PLEDIS, 플레디스, K-POP, 보이그룹, 신유, 도훈, 영재, 한진, 지훈, 경민"
+    />
+    <meta name="author" content="PLEDIS Entertainment" />
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="TWS (투어스) - Official Website" />
+    <meta
+      property="og:description"
+      content="TWS(TWENTY FOUR SEVEN WITH US)는 플레디스 엔터테인먼트의 신인 보이그룹입니다."
+    />
+    <meta
+      property="og:image"
+      content="https://your-domain.com/img/tws-og-image.jpg"
+    />
+    <meta property="og:url" content="https://your-domain.com" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="TWS (투어스) - Official Website" />
+    <meta
+      name="twitter:description"
+      content="TWS(TWENTY FOUR SEVEN WITH US)는 플레디스 엔터테인먼트의 신인 보이그룹입니다."
+    />
+    <meta
+      name="twitter:image"
+      content="https://your-domain.com/img/tws-og-image.jpg"
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./img/favicon.png" />
     <!-- jQuery (기본 및 마이그레이션) -->
     <script
       type="text/javascript"
@@ -31,7 +70,22 @@
     <!-- 사용자 정의 스타일 및 스크립트 -->
     <link rel="stylesheet" href="./style.css" />
     <script defer src="./script.js"></script>
-    <title>Document</title>
+
+    <!-- Service Worker 등록 -->
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker
+            .register("/sw.js")
+            .then((registration) => {
+              console.log("ServiceWorker registration successful");
+            })
+            .catch((err) => {
+              console.log("ServiceWorker registration failed: ", err);
+            });
+        });
+      }
+    </script>
   </head>
   <body>
     <div class="container">
@@ -39,13 +93,13 @@
         <nav>
           <!-- 로고 -->
           <div class="logo">
-            <a href="#">
-              <img src="./img/twsLogo.svg" alt="logo" />
+            <a href="#intro">
+              <img src="./img/twsLogo.svg" alt="logo" width="120" height="60" />
             </a>
           </div>
           <!-- GNB(Global Navigation Bar) -->
           <ul class="gnb">
-            <li><a href="#">HOME</a></li>
+            <li><a href="#intro">HOME</a></li>
             <li><a href="#about">ABOUT</a></li>
             <li><a href="#youtube">YOUTUBE</a></li>
             <li><a href="#member">MEMBER</a></li>
@@ -60,7 +114,7 @@
         </div>
       </header>
       <!-- 인트로 영역 -->
-      <main class="intro"></main>
+      <main id="intro" class="intro"></main>
       <!-- ABOUT 섹션 -->
       <section id="about" class="about">
         <div class="inner">
@@ -68,14 +122,14 @@
             <div class="desc">
               <h1>TWS's About</h1>
               <p>
-                TWS는 ‘TWENTY FOUR SEVEN WITH US’의 약어. 하루를 뜻하는 숫자
-                24와 일주일을 뜻하는 숫자 7은 ‘모든 순간’을 의미한다.
+                TWS는 'TWENTY FOUR SEVEN WITH US'의 약어. 하루를 뜻하는 숫자
+                24와 일주일을 뜻하는 숫자 7은 '모든 순간'을 의미한다.
                 <br />
-                즉, ‘언제나 TWS와 함께’라는 의미를 내포하고 있고, 이들은 음악을
+                즉, '언제나 TWS와 함께'라는 의미를 내포하고 있고, 이들은 음악을
                 통해 시간과 공간을 초월한 모든 순간, 대중과 팬의 평범한 일상을
                 특별하게 만들어주는 소중한 친구가 되고자 한다.
                 <br />
-                TWS는 일찌감치 ‘K-팝 최고 기대주’로 꼽혀왔다. 플레디스
+                TWS는 일찌감치 'K-팝 최고 기대주'로 꼽혀왔다. 플레디스
                 엔터테인먼트가 세븐틴 이후 무려 9년 만에 선보이는 보이그룹이자
                 하이브 레이블즈가 자신 있게 내세운 2024년 첫 주자이기 때문이다.
                 <br />
@@ -90,7 +144,14 @@
               >
             </div>
             <div class="photo">
-              <img src="./img/about.jpeg" alt="about01" />
+              <img
+                src="./img/about.jpeg"
+                srcset="./img/about-small.jpeg 300w, ./img/about.jpeg 800w"
+                sizes="(max-width: 768px) 300px,
+                       800px"
+                alt="about01"
+                loading="lazy"
+              />
             </div>
           </div>
         </div>
@@ -103,9 +164,19 @@
             <div class="items">
               <div class="item">
                 <div class="up-image">
-                  <a href="https://youtu.be/-XHCYeCGlgw?si=M7GyaxvtP1yS65S3"
-                    ><img src="./img/youtube01.jpeg" alt="city01"
-                  /></a>
+                  <a href="https://youtu.be/-XHCYeCGlgw?si=M7GyaxvtP1yS65S3">
+                    <img
+                      src="./img/youtube01.jpeg"
+                      srcset="
+                        ./img/youtube01-small.jpeg 300w,
+                        ./img/youtube01.jpeg       800w
+                      "
+                      sizes="(max-width: 768px) 300px,
+                             800px"
+                      alt="city01"
+                      loading="lazy"
+                    />
+                  </a>
                 </div>
                 <div class="down-desc">
                   <h3>TWS '마지막 축제' Official MV</h3>
@@ -140,7 +211,7 @@
                 </div>
                 <div class="down-desc">
                   <h3>
-                    TWS Last Bell Showcase ‘한 겨울밤의 꿈’ - 내가 태양이라면
+                    TWS Last Bell Showcase '한 겨울밤의 꿈' - 내가 태양이라면
                   </h3>
 
                   <a
@@ -162,7 +233,17 @@
             <div class="myslider">
               <div>
                 <p class="twsmember">
-                  <img src="./img/shinyu.webp" alt="member01" />
+                  <img
+                    src="./img/shinyu.webp"
+                    srcset="
+                      ./img/shinyu-small.webp 150w,
+                      ./img/shinyu.webp       300w
+                    "
+                    sizes="(max-width: 768px) 150px,
+                           300px"
+                    alt="member01"
+                    loading="lazy"
+                  />
                   <span>신유</span>
                   <span>2003.11.07</span>
                 </p>
@@ -274,7 +355,7 @@
                       <h3>Sparkling Blue</h3>
                       <p>
                         PLEDIS 신인 그룹의 데뷔 EP. 맑고 청량한 사운드로 가득한
-                        소년들의 이야기. //
+                        소년들의 이야기.
                         <span>2024년 1월 22일</span>
                       </p>
                     </div>

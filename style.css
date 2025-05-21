@@ -2,94 +2,153 @@
 
 @import url("./reset.css");
 
+/* CSS 변수 정의 */
+:root {
+  /* 색상 */
+  --color-primary: #1e3f75;
+  --color-secondary: #4278a1;
+  --color-text: #333;
+  --color-light: #fff;
+  --color-gray: #f8f8f8;
+  --color-accent: crimson;
+
+  /* 폰트 크기 */
+  --font-xs: 0.875rem; /* 14px */
+  --font-sm: 1rem; /* 16px */
+  --font-md: 1.25rem; /* 20px */
+  --font-lg: 1.875rem; /* 30px */
+  --font-xl: 4.375rem; /* 70px */
+
+  /* 여백 */
+  --space-xs: 0.625rem; /* 10px */
+  --space-sm: 1.25rem; /* 20px */
+  --space-md: 1.875rem; /* 30px */
+  --space-lg: 3.125rem; /* 50px */
+  --space-xl: 6.25rem; /* 100px */
+
+  /* 반응형 브레이크포인트 */
+  --breakpoint-tablet: 770px;
+  --breakpoint-mobile: 390px;
+}
+
+/* 스무스 스크롤 적용 */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
-  font-size: 15px;
+  font-size: var(--font-sm);
+  color: var(--color-text);
+  line-height: 1.5;
 }
 
 .inner {
   margin: 0 auto;
-  width: 1300px;
+  max-width: 1300px;
+  width: 90%;
 }
 
 /* Header */
 header {
   position: fixed;
   top: 0;
+  left: 0;
   z-index: 10000;
   width: 100%;
-  a {
-    margin-right: 10px;
-    color: #ddd;
-  }
+  transition: background-color 0.3s ease;
 
   nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 0 auto;
-    margin-top: 20px;
-    width: 1300px;
-    height: 50px;
+    max-width: 1300px;
+    height: 70px;
+    padding: 0 var(--space-sm);
+
     .logo {
+      position: relative;
+      z-index: 1000;
+
       img {
         width: 120px;
         height: 60px;
+        display: block;
       }
     }
+
     .gnb {
       display: flex;
-      gap: 20px;
+      gap: var(--space-sm);
       li {
         a {
-          color: gray;
+          display: block;
+          padding: 0.5rem var(--space-xs);
+          color: var(--color-text);
+          font-weight: 500;
+          transition: color 0.3s ease;
+
           &:hover {
-            color: #4278a1;
+            color: var(--color-secondary);
           }
         }
       }
     }
   }
+
   .trigger {
     display: none;
   }
+
   &.active {
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    background: #1e3f75;
+    background: var(--color-primary);
+
     .gnb li a {
-      color: #fff;
-    }
-    .banner {
-      overflow: hidden;
-      height: 0;
-    }
-    nav {
-      padding-bottom: 20px;
+      color: var(--color-light);
+
+      &:hover {
+        color: var(--color-gray);
+      }
     }
   }
 }
 
 /* Intro */
 .intro {
+  padding-top: 70px; /* 헤더 높이만큼 여백 추가 */
+  min-height: 100vh;
   display: flex;
   align-items: center;
   width: 100%;
-  height: 100vh;
   background: url("./img/tws1.webp") center/cover no-repeat;
+  background-attachment: fixed; /* 배경 이미지 고정 */
+
   @media screen and (max-width: 390px) {
     background: url("./img/tws.jpg") center/cover no-repeat;
+    background-attachment: fixed;
   }
+
   .heading {
-    color: #fff;
+    width: 100%;
+    color: var(--color-light);
     text-align: center;
+
     h1 {
-      margin-bottom: 40px;
-      font-size: 70px;
+      margin-bottom: var(--space-lg);
+      font-size: var(--font-xl);
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     }
+
     p {
-      padding: 0 150px;
-      font-size: 22px;
-      line-height: 1.5rem;
+      padding: 0 var(--space-xl);
+      font-size: var(--font-md);
+      line-height: 1.6;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+
+      @media screen and (max-width: 770px) {
+        padding: 0 var(--space-md);
+      }
     }
   }
 }
@@ -418,8 +477,7 @@ footer {
 
 @media screen and (max-width: 770px) {
   .inner {
-    padding: 15px;
-    width: 100%;
+    width: 95%;
   }
 
   /* Header */
@@ -428,66 +486,60 @@ footer {
       display: none;
     }
     nav {
-      padding: 0 20px;
+      padding: 0 var(--space-xs);
       width: 100%;
       .gnb {
-        flex-direction: column;
-        padding: 80px 10px 0 0;
-        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-        position: fixed;
-        top: 0;
-        right: -250px;
-        width: 250px;
-        height: 100vh;
-        background: #1e3f75;
-        text-align: right;
-        transition: all 0.3s;
-        li {
-          a {
-            display: block;
-            padding: 10px;
-            font-size: 18px;
-            color: #000;
-          }
-        }
+        display: none;
         &.active {
-          right: 0;
+          display: flex;
+          flex-direction: column;
+          position: absolute;
+          top: 70px; /* 헤더 높이에 맞춤 */
+          left: 0;
+          width: 100%;
+          background: var(--color-primary);
+          padding: var(--space-sm);
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
+          li a {
+            color: var(--color-light);
+            padding: var(--space-xs) 0;
+            text-align: center;
+
+            &:hover {
+              background: var(--color-secondary);
+            }
+          }
         }
       }
     }
     .trigger {
       display: block;
-      position: absolute;
-      top: 25px;
-      right: 20px;
-      width: 30px;
-      height: 16px;
+      cursor: pointer;
+      z-index: 1000;
+      padding: var(--space-xs);
+
       span {
-        position: absolute;
-        width: 100%;
-        height: 1px;
-        background: #000;
-        transition: all 0.3s;
+        display: block;
+        width: 25px;
+        height: 2px;
+        background: var(--color-text);
+        margin: 5px 0;
+        transition: 0.3s;
+      }
+
+      &.active span {
+        background: var(--color-light);
+
         &:nth-child(1) {
-          top: 0;
+          transform: rotate(45deg) translate(5px, 5px);
         }
         &:nth-child(2) {
-          top: 50%;
+          opacity: 0;
         }
         &:nth-child(3) {
-          top: 100%;
+          transform: rotate(-45deg) translate(5px, -5px);
         }
-      }
-      &.active span:nth-child(1) {
-        top: 50%;
-        transform: rotate(45deg);
-      }
-      &.active span:nth-child(2) {
-        opacity: 0;
-      }
-      &.active span:nth-child(3) {
-        top: 50%;
-        transform: rotate(-45deg);
       }
     }
   }
