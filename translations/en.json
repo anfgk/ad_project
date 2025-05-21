@@ -1,0 +1,90 @@
+{
+  "meta": {
+    "title": "TWS - Official Website",
+    "description": "TWS (TWENTY FOUR SEVEN WITH US) is a rookie boy group from PLEDIS Entertainment, consisting of members Shinyu, Dohoon, Youngjae, Hanjin, Jihoon, and Kyungmin."
+  },
+  "nav": {
+    "home": "HOME",
+    "about": "ABOUT",
+    "youtube": "YOUTUBE",
+    "member": "MEMBER",
+    "album": "ALBUM"
+  },
+  "hero": {
+    "title": "Our Story",
+    "subtitle": "Touching Hearts Through Music"
+  },
+  "about": {
+    "title": "TWS's About",
+    "description": "TWS stands for 'TWENTY FOUR SEVEN WITH US'. The number 24 representing a day and 7 representing a week symbolize 'every moment'.\nThis implies 'always with TWS', and they aim to be precious friends who make ordinary moments special for the public and fans through their music, transcending time and space.\nTWS has been early recognized as 'K-pop's most anticipated rookie'. They are PLEDIS Entertainment's first boy group in 9 years since SEVENTEEN, and HYBE Labels' confident first runner of 2024.\nSix elite members (Shinyu, Dohoon, Youngjae, Hanjin, Jihoon, Kyungmin) have come together with solid performance skills, visuals, and excellent musical sense. They present their unique genre 'Boyhood Pop', expanded from their bright and refreshing team identity, which refers to fantastic and sensual music that evokes beautiful emotions in everyday life.",
+    "link": "Go to TWS Official Website"
+  },
+  "youtube": {
+    "title": "TWS's Youtube",
+    "videos": {
+      "mv": "TWS 'Last Festival' Official MV",
+      "performance": "TWS 'Last Festival' Official MV (Performance ver.)",
+      "showcase": "TWS Last Bell Showcase 'A Midwinter Night's Dream' - If I Were the Sun"
+    },
+    "explore": "Explore"
+  },
+  "member": {
+    "title": "PROFILE",
+    "members": {
+      "shinyu": {
+        "name": "Shinyu",
+        "birth": "2003.11.07"
+      },
+      "dohoon": {
+        "name": "Dohoon",
+        "birth": "2005.01.30"
+      },
+      "youngjae": {
+        "name": "Youngjae",
+        "birth": "2005.05.31"
+      },
+      "hanjin": {
+        "name": "Hanjin",
+        "birth": "2006.01.05"
+      },
+      "jihoon": {
+        "name": "Jihoon",
+        "birth": "2006.03.28"
+      },
+      "kyungmin": {
+        "name": "Kyungmin",
+        "birth": "2007.10.02"
+      }
+    }
+  },
+  "album": {
+    "title": "Album",
+    "albums": {
+      "lastBell": {
+        "title": "Last Bell",
+        "description": "TWS's reinterpretation of Seo Taiji and Boys. Youth energy continuing with a new spark.",
+        "date": "November 25, 2024"
+      },
+      "heyHey": {
+        "title": "hey! hey!",
+        "description": "Pre-release single from the 2nd mini album. Capturing summer scenery while cutting through the cool breeze.",
+        "date": "June 5, 2024"
+      },
+      "ohMymy": {
+        "title": "Oh Mymy : 7s",
+        "description": "PLEDIS's rookie group's debut single showcasing pure boyhood emotions through 'Boyhood Pop'.",
+        "date": "January 2, 2024"
+      },
+      "summerBeat": {
+        "title": "SUMMER BEAT!",
+        "description": "TWS's 2nd mini album coloring summer with funky beats and vivid melodies.",
+        "date": "June 24, 2024"
+      },
+      "sparklingBlue": {
+        "title": "Sparkling Blue",
+        "description": "PLEDIS rookie group's debut EP. A story of boys filled with clear and refreshing sound.",
+        "date": "January 22, 2024"
+      }
+    }
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "meta": {
+    "title": "TWS (투어스) - Official Website",
+    "description": "TWS(TWENTY FOUR SEVEN WITH US)는 플레디스 엔터테인먼트의 신인 보이그룹입니다. 멤버 신유, 도훈, 영재, 한진, 지훈, 경민으로 구성되어 있습니다."
+  },
+  "nav": {
+    "home": "HOME",
+    "about": "ABOUT",
+    "youtube": "YOUTUBE",
+    "member": "MEMBER",
+    "album": "ALBUM"
+  },
+  "about": {
+    "title": "TWS's About",
+    "description": "TWS는 'TWENTY FOUR SEVEN WITH US'의 약어. 하루를 뜻하는 숫자 24와 일주일을 뜻하는 숫자 7은 '모든 순간'을 의미한다.\n즉, '언제나 TWS와 함께'라는 의미를 내포하고 있고, 이들은 음악을 통해 시간과 공간을 초월한 모든 순간, 대중과 팬의 평범한 일상을 특별하게 만들어주는 소중한 친구가 되고자 한다.\nTWS는 일찌감치 'K-팝 최고 기대주'로 꼽혀왔다. 플레디스 엔터테인먼트가 세븐틴 이후 무려 9년 만에 선보이는 보이그룹이자 하이브 레이블즈가 자신 있게 내세운 2024년 첫 주자이기 때문이다.\n탄탄한 퍼포먼스 실력과 비주얼, 탁월한 음악 감각을 지닌 6명(신유, 도훈, 영재, 한진, 지훈, 경민)의 최정예 멤버가 뭉쳤다. 이들은 맑고 청량한 팀 아이덴티티에서 확장한 독자적 장르 보이후드 팝(Boyhood Pop)을 내세우고, 보이후드 팝은 일상 속에서 아름다운 감상을 불러일으키는 환상적이고 감각적인 음악을 일컫는다.",
+    "link": "TWS 공식홈페이지 바로가기"
+  },
+  "youtube": {
+    "title": "TWS's Youtube",
+    "videos": {
+      "mv": "TWS '마지막 축제' Official MV",
+      "performance": "TWS '마지막 축제' Official MV (Performance ver.)",
+      "showcase": "TWS Last Bell Showcase '한 겨울밤의 꿈' - 내가 태양이라면"
+    },
+    "explore": "Explore"
+  },
+  "member": {
+    "title": "PROFILE",
+    "members": {
+      "shinyu": {
+        "name": "신유",
+        "birth": "2003.11.07"
+      },
+      "dohoon": {
+        "name": "도훈",
+        "birth": "2005.01.30"
+      },
+      "youngjae": {
+        "name": "영재",
+        "birth": "2005.05.31"
+      },
+      "hanjin": {
+        "name": "한진",
+        "birth": "2006.01.05"
+      },
+      "jihoon": {
+        "name": "지훈",
+        "birth": "2006.03.28"
+      },
+      "kyungmin": {
+        "name": "경민",
+        "birth": "2007.10.02"
+      }
+    }
+  },
+  "album": {
+    "title": "Album",
+    "albums": {
+      "lastBell": {
+        "title": "Last Bell",
+        "description": "투어스가 재해석한 서태지와 아이들. 새로운 불꽃으로 이어가는 청춘의 에너지.",
+        "date": "2024년 11월 25일"
+      },
+      "heyHey": {
+        "title": "hey! hey!",
+        "description": "미니 2집 선공개 싱글. 시원한 바람을 가르며 내달리는 여름 풍경을 담다.",
+        "date": "2024년 6월 5일"
+      },
+      "ohMymy": {
+        "title": "Oh Mymy : 7s",
+        "description": "순수한 소년 감성을 '보이후드 팝'으로 펼치는 PLEDIS 신인 그룹의 데뷔 싱글.",
+        "date": "2024년 1월 2일"
+      },
+      "summerBeat": {
+        "title": "SUMMER BEAT!",
+        "description": "펑키한 비트와 선명한 선율로 여름을 채색하는 투어스의 미니 2집.",
+        "date": "2024년 6월 24일"
+      },
+      "sparklingBlue": {
+        "title": "Sparkling Blue",
+        "description": "PLEDIS 신인 그룹의 데뷔 EP. 맑고 청량한 사운드로 가득한 소년들의 이야기.",
+        "date": "2024년 1월 22일"
+      }
+    }
+  }
+}

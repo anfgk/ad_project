@@ -1,0 +1,86 @@
+{
+  "meta": {
+    "title": "TWS - 公式ウェブサイト",
+    "description": "TWS（TWENTY FOUR SEVEN WITH US）は、PLEDISエンターテインメントの新人ボーイグループです。メンバーのシンユ、ドフン、ヨンジェ、ハンジン、ジフン、ギョンミンで構成されています。"
+  },
+  "nav": {
+    "home": "HOME",
+    "about": "ABOUT",
+    "youtube": "YOUTUBE",
+    "member": "MEMBER",
+    "album": "ALBUM"
+  },
+  "about": {
+    "title": "TWS's About",
+    "description": "TWSは'TWENTY FOUR SEVEN WITH US'の略語です。一日を表す数字24と一週間を表す数字7は'すべての瞬間'を意味します。\nつまり、'いつもTWSと一緒に'という意味が込められており、彼らは音楽を通じて時間と空間を超えたすべての瞬間、大衆とファンの普通の日常を特別なものにする大切な友達になりたいと考えています。\nTWSは早くも'K-POPの最も期待される新人'として注目されてきました。PLEDISエンターテインメントがSEVENTEEN以来、実に9年ぶりに送り出すボーイグループであり、HYBE Labelsが自信を持って送り出す2024年の第一走者だからです。\n確かなパフォーマンス実力とビジュアル、優れた音楽センスを持つ6人（シンユ、ドフン、ヨンジェ、ハンジン、ジフン、ギョンミン）の精鋭メンバーが集結しました。彼らは清々しく爽やかなチームアイデンティティから発展した独自のジャンル'ボーイフッドポップ（Boyhood Pop）'を掲げ、ボーイフッドポップは日常の中で美しい感動を呼び起こす幻想的で感覚的な音楽を指します。",
+    "link": "TWS公式ホームページへ"
+  },
+  "youtube": {
+    "title": "TWS's Youtube",
+    "videos": {
+      "mv": "TWS '最後の祭り' Official MV",
+      "performance": "TWS '最後の祭り' Official MV (Performance ver.)",
+      "showcase": "TWS Last Bell Showcase '真冬の夜の夢' - もし僕が太陽なら"
+    },
+    "explore": "もっと見る"
+  },
+  "member": {
+    "title": "PROFILE",
+    "members": {
+      "shinyu": {
+        "name": "シンユ",
+        "birth": "2003.11.07"
+      },
+      "dohoon": {
+        "name": "ドフン",
+        "birth": "2005.01.30"
+      },
+      "youngjae": {
+        "name": "ヨンジェ",
+        "birth": "2005.05.31"
+      },
+      "hanjin": {
+        "name": "ハンジン",
+        "birth": "2006.01.05"
+      },
+      "jihoon": {
+        "name": "ジフン",
+        "birth": "2006.03.28"
+      },
+      "kyungmin": {
+        "name": "ギョンミン",
+        "birth": "2007.10.02"
+      }
+    }
+  },
+  "album": {
+    "title": "Album",
+    "albums": {
+      "lastBell": {
+        "title": "Last Bell",
+        "description": "TWSが再解釈したソテジワアイドゥル。新しい炎で繋がる青春のエネルギー。",
+        "date": "2024年11月25日"
+      },
+      "heyHey": {
+        "title": "hey! hey!",
+        "description": "ミニ2集先行公開シングル。爽やかな風を切って駆け抜ける夏の風景を描く。",
+        "date": "2024年6月5日"
+      },
+      "ohMymy": {
+        "title": "Oh Mymy : 7s",
+        "description": "純粋な少年感性を'ボーイフッドポップ'で展開するPLEDIS新人グループのデビューシングル。",
+        "date": "2024年1月2日"
+      },
+      "summerBeat": {
+        "title": "SUMMER BEAT!",
+        "description": "ファンキーなビートと鮮明なメロディーで夏を彩るTWSのミニ2集。",
+        "date": "2024年6月24日"
+      },
+      "sparklingBlue": {
+        "title": "Sparkling Blue",
+        "description": "PLEDIS新人グループのデビューEP。清らかで爽やかなサウンドで満ちた少年たちの物語。",
+        "date": "2024年1月22日"
+      }
+    }
+  }
+}
