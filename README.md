@@ -10,7 +10,7 @@
 HTML, CSS, JS, JQuery(슬라이더 구현을 위한 Slick 라이브러리 사용)
 
 ## 🖥️ Other Skill
-Netlify
+Netlify, GitHub
 
 ## 💡 문제점 / 해결 방법
 1. 언어 선택기 토글 동작 문제
